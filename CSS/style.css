@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.section-header{
+    margin-top: 5px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.t1{
+    font-family: 'Combo', cursive;
+}
+
+.t2{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.t3{
+    font-family: 'Pacifico', cursive;
+}
+
+.t4{
+    font-family: 'Permanent Marker', cursive;
+} 
+
+hr{
+    background-color: #000000;
+    box-shadow: 0px 0px 10px 3px #0f0791;
+    border: 1px solid;
+    opacity: 0.7;
+}
+
+
+.carousel {
+    padding: 25px;
+  }
+  
+  .carousel-contenedor {
+    position: relative;
+  }
+  
+  .corousel-izq,
+  .corousel-der {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 30px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    opacity: 70%;
+  }
+  
+  .corousel-izq:hover,
+  .corousel-der:hover {
+    opacity: 100%;
+  }
+  
+  .corousel-izq {
+    left: -30px;
+  }
+  
+  .corousel-der {
+    right: -30px;
+  }
+  
+  .carousel-indicador .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    opacity: 0.2;
+    border-radius: 0;
+  }
+  
+  .carousel-indicador .glider-dot:hover {
+    opacity: 0.5;
+  }
+  
+  .carousel-indicador .glider-dot.active {
+    opacity: 1;
+  }
