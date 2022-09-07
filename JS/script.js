@@ -1,35 +1,20 @@
-window.addEventListener("load", function () {
-    new Glider(document.querySelector(".carousel-lista"), {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      draggable: true,
-      dots: ".carousel-indicador",
-      arrows: {
-        prev: ".corousel-izq",
-        next: ".corousel-der",
-      },
-      responsive: [
-        {
-          // screens greater than >= 775px
-          breakpoint: 750,
-          settings: {
-            // Set to `auto` and provide item width to adjust to viewport
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            itemWidth: 150,
-            duration: 100
-          }
-        },{
-          // screens greater than >= 1024px
-          breakpoint: 1440,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            itemWidth: 150,
-            duration: 100
-          }
-        }
-      ]
-    
-    });
-  });
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
+  slidesPerView: "auto",
+  loop: "true",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true
+  }
+});
+
+AOS.init();
